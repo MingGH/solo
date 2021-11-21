@@ -28,7 +28,7 @@ const genSkinsEntries = () => {
   fs.readdirSync('./src/main/resources/skins').forEach(function (file) {
     const jsPath = `./src/main/resources/skins/${file}`
     try {
-      fs.statSync(`${jsPath}/js/common.js`)
+      fs.statSync(`https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/common.js`)
       entries[`skins/${file}/js/common`] = `${jsPath}/js/common.js`
     } catch (e) {
     }
@@ -54,36 +54,36 @@ module.exports = (env, argv) => {
     },
     entry: Object.assign(genSkinsEntries(), {
       'js/admin/admin': [
-        './src/main/resources/js/admin/admin.js',
-        './src/main/resources/js/admin/editor.js',
-        './src/main/resources/js/admin/tablePaginate.js',
-        './src/main/resources/js/admin/article.js',
-        './src/main/resources/js/admin/articleList.js',
-        './src/main/resources/js/admin/draftList.js',
-        './src/main/resources/js/admin/pageList.js',
-        './src/main/resources/js/admin/others.js',
-        './src/main/resources/js/admin/linkList.js',
-        './src/main/resources/js/admin/preference.js',
-        './src/main/resources/js/admin/staticsite.js',
-        './src/main/resources/js/admin/themeList.js',
-        './src/main/resources/js/admin/pluginList.js',
-        './src/main/resources/js/admin/userList.js',
-        './src/main/resources/js/admin/categoryList.js',
-        './src/main/resources/js/admin/plugin.js',
-        './src/main/resources/js/admin/main.js',
-        './src/main/resources/js/admin/about.js'],
-      'js/common': './src/main/resources/js/common.js',
-      'js/page': './src/main/resources/js/page.js',
-      'dist/admin': './src/main/resources/scss/admin.scss',
-      'dist/base': './src/main/resources/scss/base.scss',
-      'dist/start': './src/main/resources/scss/start.scss',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/admin.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/editor.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/tablePaginate.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/article.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/articleList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/draftList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/pageList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/others.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/linkList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/preference.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/staticsite.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/themeList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/pluginList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/userList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/categoryList.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/plugin.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/main.js',
+        'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/admin/about.js'],
+      'js/common': 'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/common.js',
+      'js/page': 'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/page.js',
+      'dist/admin': 'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/scss/admin.scss',
+      'dist/base': 'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/scss/base.scss',
+      'dist/start': 'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/scss/start.scss',
     }),
     module: {
       rules: [
         {
           test: /\.js/,
           include: [
-            path.resolve(__dirname, './src/main/resources/js'),
+            path.resolve(__dirname, 'https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/js/'),
             path.resolve(__dirname, './src/main/resources/templates/skins'),
           ],
           use: {

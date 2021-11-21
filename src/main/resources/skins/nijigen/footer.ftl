@@ -21,5 +21,5 @@
 <div class="icon-up" onclick="Util.goTop()"></div>
 
 <#include "../../common-template/label.ftl">
-<script type="text/javascript" src="${staticServePath}/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}" charset="utf-8"></script>
+<script type="text/javascript" src="https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}" charset="utf-8"></script>
 ${plugins}

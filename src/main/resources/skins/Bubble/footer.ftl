@@ -26,7 +26,7 @@
 </svg>
 <#include "../../common-template/label.ftl">
 <script type="text/javascript"
-        src="${staticServePath}/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}"
+        src="https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}"
         charset="utf-8"></script>
 <script type="text/javascript"
         src="${staticServePath}/skins/${skinDirName}/js/circleMagic.min.js?${staticResourceVersion}"

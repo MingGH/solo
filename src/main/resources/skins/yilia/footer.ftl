@@ -27,5 +27,5 @@
     <span onclick="Util.goTop()" class="icon-goup"></span>
 </footer>
 <#include "../../common-template/label.ftl">
-<script src="${staticServePath}/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}"></script>
+<script src="https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}"></script>
 ${plugins}

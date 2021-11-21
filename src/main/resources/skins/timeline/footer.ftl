@@ -39,7 +39,7 @@
 </div>
 <div class="ico-top none" onclick="Util.goTop()" title="TOP"></div>
 <#include "../../common-template/label.ftl">
-<script src="${staticServePath}/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}"></script>
+<script src="https://runnable.oss-cn-guangzhou.aliyuncs.com/solo/skins/${skinDirName}/js/common.min.js?${staticResourceVersion}"></script>
 <script type="text/javascript">
     Label.localeString = "${localeString}"
     Label.yearLabel = "${yearLabel}"
